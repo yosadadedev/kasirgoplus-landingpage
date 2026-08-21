@@ -2,7 +2,7 @@ const KenapaSection = () => {
   const features = [
     {
       icon: "🎁",
-      iconBg: "bg-blue-100",
+      iconBg: "bg-[#3958A3]/10",
       title: "Aplikasi Kasir Gratis Selamanya",
       description:
         "Tidak ada biaya langganan atau biaya tersembunyi. Aplikasi kasir kami gratis selamanya dengan fitur POS lengkap tanpa batasan fitur.",

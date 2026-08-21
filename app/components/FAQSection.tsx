@@ -61,7 +61,7 @@ const FAQSection = () => {
     <section id="faq" className="py-20 lg:py-28 bg-gray-50/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-bold tracking-wider uppercase mb-5">
+          <span className="inline-block px-4 py-1.5 bg-[#3958A3]/10 text-blue-700 rounded-full text-sm font-bold tracking-wider uppercase mb-5">
             Pertanyaan Umum
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
@@ -73,7 +73,7 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border-b border-gray-100 last:border-b-0 ${openIndex === index ? "bg-blue-50/30" : ""}`}
+              className={`border-b border-gray-100 last:border-b-0 ${openIndex === index ? "bg-[#3958A3]/5" : ""}`}
             >
               <button
                 type="button"

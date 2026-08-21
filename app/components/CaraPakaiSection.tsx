@@ -27,7 +27,7 @@ const CaraPakaiSection = () => {
     <section id="cara-pakai" className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-bold tracking-wider uppercase mb-5">
+          <span className="inline-block px-4 py-1.5 bg-[#3958A3]/10 text-blue-700 rounded-full text-sm font-bold tracking-wider uppercase mb-5">
             Cara Pakai
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
@@ -44,11 +44,11 @@ const CaraPakaiSection = () => {
               key={index}
               className="relative group"
             >
-              <div className="absolute -top-8 left-6 text-[120px] font-black text-gray-100 leading-none select-none pointer-events-none group-hover:text-blue-100 transition-colors">
+              <div className="absolute -top-8 left-6 text-[120px] font-black text-gray-100 leading-none select-none pointer-events-none group-hover:text-[#3958A3]/10 transition-colors">
                 {step.number}
               </div>
-              <div className="relative bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 hover:shadow-xl hover:shadow-gray-200/50 hover:border-blue-200 hover:-translate-y-1 transition-all duration-300">
-                <div className="relative w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg shadow-blue-600/25 group-hover:scale-110 transition-transform duration-300">
+              <div className="relative bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 hover:shadow-xl hover:shadow-gray-200/50 hover:border-[#3958A3]/15 hover:-translate-y-1 transition-all duration-300">
+                <div className="relative w-16 h-16 bg-[#3958A3] rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg shadow-[#3958A3]/25 group-hover:scale-110 transition-transform duration-300">
                   {step.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -67,7 +67,7 @@ const CaraPakaiSection = () => {
             href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-all font-semibold text-lg shadow-xl shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-1"
+            className="inline-flex items-center gap-3 px-10 py-4 bg-[#3958A3] hover:bg-[#304c8d] text-white rounded-full transition-all font-semibold text-lg shadow-xl shadow-[#3958A3]/30 hover:shadow-[#3958A3]/50 hover:-translate-y-1"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 512 512">
               <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>

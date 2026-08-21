@@ -1,13 +1,15 @@
+import Image from "next/image";
+
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden pt-4 pb-12 lg:pt-8 lg:pb-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-white to-indigo-50/20" />
-      <div className="absolute top-16 right-40 w-[32rem] h-[32rem] bg-blue-400/5 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#3958A3]/5 via-white to-[#3958A3]/3" />
+      <div className="absolute top-16 right-40 w-[32rem] h-[32rem] bg-[#3958A3]/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
           <div className="space-y-6 lg:space-y-7">
-            {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 border border-blue-100 rounded-full text-[14px] font-medium text-blue-700">
+            {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#3958A3]/5 border border-[#3958A3]/10 rounded-full text-[14px] font-medium text-blue-700">
               <svg className="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
@@ -35,7 +37,7 @@ const HeroSection = () => {
                 href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-all font-semibold text-base shadow-[0_14px_30px_-12px_rgba(37,99,235,0.5)] hover:shadow-[0_16px_35px_-12px_rgba(37,99,235,0.65)] hover:-translate-y-0.5"
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-[#3958A3] hover:bg-[#304c8d] text-white rounded-full transition-all font-semibold text-base shadow-[0_14px_30px_-12px_rgba(57,88,163,0.55)] hover:shadow-[0_16px_35px_-12px_rgba(57,88,163,0.7)] hover:-translate-y-0.5"
               >
                 Coba KasirGo+ Sekarang
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,27 +93,33 @@ const HeroSection = () => {
           <div className="relative flex items-center justify-center">
             <div className="relative w-full flex items-center justify-center">
               <div className="relative w-full max-w-[17rem] sm:max-w-[17.5rem] aspect-[9/19] mx-auto">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-[48%] md:-left-[44%] w-[78%] max-w-[13rem] aspect-[9/19] z-0 opacity-85 blur-[0.5px] transition-all hover:opacity-100 hover:scale-[1.02] duration-500">
-                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1.5 shadow-xl shadow-gray-900/30">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-[48%] md:-left-[44%] w-[78%] max-w-[13rem] aspect-[9/19] z-0 transition-all hover:scale-[1.02] duration-500 saturate-[1.03]">
+                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1.5 shadow-xl shadow-gray-900/25">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.65rem] bg-white">
-                      <img
+                      <Image
                         src="/trnasaksi-screen.jpeg"
                         alt="Tampilan Transaksi KasirGo+"
-                        className="w-full h-full object-contain"
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 768px) 100vw, 200px"
+                        unoptimized
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="absolute top-1/2 -translate-y-1/2 -right-[48%] md:-right-[44%] w-[78%] max-w-[13rem] aspect-[9/19] z-0 opacity-85 blur-[0.5px] transition-all hover:opacity-100 hover:scale-[1.02] duration-500">
-                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1.5 shadow-xl shadow-gray-900/30">
+                <div className="absolute top-1/2 -translate-y-1/2 -right-[48%] md:-right-[44%] w-[78%] max-w-[13rem] aspect-[9/19] z-0 transition-all hover:scale-[1.02] duration-500 saturate-[1.03]">
+                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1.5 shadow-xl shadow-gray-900/25">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.65rem] bg-white">
-                      <img
+                      <Image
                         src="/report-screen.jpeg"
                         alt="Tampilan Laporan Keuangan KasirGo+"
-                        className="w-full h-full object-contain"
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 768px) 100vw, 200px"
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -121,10 +129,14 @@ const HeroSection = () => {
                   <div className="relative w-full h-full bg-gray-900 rounded-[2.35rem] p-[1.5px] sm:p-1.5 shadow-2xl shadow-gray-900/45">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[1.3rem] bg-gray-900 rounded-b-[0.9rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.9rem] bg-white">
-                      <img
+                      <Image
                         src="/kasir-screen.jpeg"
                         alt="Tampilan Menu Kasir KasirGo+"
-                        className="w-full h-full object-contain"
+                        fill
+                        className="object-contain"
+                        priority
+                        sizes="(max-width: 768px) 100vw, 300px"
+                        unoptimized
                       />
                     </div>
                   </div>

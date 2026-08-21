@@ -2,42 +2,42 @@ const FiturSection = () => {
   const features = [
     {
       icon: "⚡",
-      iconBg: "bg-blue-100",
+      iconBg: "bg-[#3958A3]/10",
       title: "Kasir & POS Cepat",
       description:
         "Proses transaksi penjualan kasir dalam hitungan detik. Pilih produk, atur diskon, dan tentukan metode pembayaran dengan mudah.",
     },
     {
       icon: "📋",
-      iconBg: "bg-blue-100",
+      iconBg: "bg-[#3958A3]/10",
       title: "Open Bill",
       description:
         "Simpan transaksi sebagai bon terbuka. Catat nama pelanggan, nomor meja, catatan per item, dan keterangan tambahan.",
     },
     {
       icon: "👥",
-      iconBg: "bg-blue-100",
+      iconBg: "bg-[#3958A3]/10",
       title: "Multi-User & Hak Akses",
       description:
         "Mode owner + staf opsional dengan login PIN 4–6 digit. Atur izin per staf (kelola produk, lihat laporan, refund, dll).",
     },
     {
       icon: "📦",
-      iconBg: "bg-blue-100",
+      iconBg: "bg-[#3958A3]/10",
       title: "Manajemen Produk",
       description:
         "Tambah produk dengan foto, SKU, barcode, kategori, deskripsi, satuan, harga jual, dan HPP. Pencarian cepat di kasir.",
     },
     {
       icon: "🧊",
-      iconBg: "bg-blue-100",
+      iconBg: "bg-[#3958A3]/10",
       title: "Stok Otomatis",
       description:
         "Stok masuk dari supplier dan stok keluar (rusak/hilang/retur). HPP otomatis dengan metode weighted average.",
     },
     {
       icon: "📏",
-      iconBg: "bg-blue-100",
+      iconBg: "bg-[#3958A3]/10",
       title: "Master Data Satuan",
       description:
         "Kelola satuan produk (pcs, kg, liter, dll) dengan CRUD lengkap. Aman dari penghapusan saat masih dipakai.",
@@ -69,7 +69,7 @@ const FiturSection = () => {
     <section id="fitur" className="py-20 lg:py-28 bg-gray-50/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-bold tracking-wider uppercase mb-5">
+          <span className="inline-block px-4 py-1.5 bg-[#3958A3]/10 text-blue-700 rounded-full text-sm font-bold tracking-wider uppercase mb-5">
             Fitur Lengkap
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">

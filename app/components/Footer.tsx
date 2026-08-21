@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -5,23 +7,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-5">
-              <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  />
-                </svg>
+              <div className="w-10 h-10 relative bg-[#3958A3] rounded-xl flex items-center justify-center p-1.5 overflow-hidden">
+                <Image
+                  src="/kasirgoplus-icon.svg"
+                  alt="KasirGo+ Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <span className="text-2xl font-bold text-white">
-                Kasir<span className="text-blue-500">Go+</span>
+                Kasir<span className="text-[#3958A3]">Go+</span>
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed max-w-md mb-6">
@@ -86,7 +81,7 @@ const Footer = () => {
               <a
                 key={social.name}
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all text-sm font-bold"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#3958A3] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all text-sm font-bold"
                 aria-label={social.name}
               >
                 {social.icon}

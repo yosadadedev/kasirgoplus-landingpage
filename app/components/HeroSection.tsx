@@ -18,18 +18,18 @@ const HeroSection = () => {
 
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-[3.75rem] font-extrabold text-gray-900 leading-[0.95] tracking-tight">
-                Aplikasi Kasir{" "}
+                Aplikasi Kasir untuk UMKM, Mudah &{" "}
                 <span className="relative inline-block">
-                  <span className="relative z-10 text-blue-600 font-extrabold">Gratis</span>
+                  <span className="relative z-10 text-blue-600 font-extrabold">Praktis</span>
                   <span className="absolute bottom-0.5 left-0 w-full h-2.5 bg-yellow-300/75 -z-0 rounded-sm" />
                 </span>{" "}
-                & POS (Point of Sale) Digital
+                Dipakai
               </h1>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
               Kelola penjualan, stok barang, dan keuangan dengan aplikasi kasir gratis{" "}
-              <strong>KasirGo+</strong>. Sistem POS (Point of Sale) terbaik untuk HP, tablet, dan laptop — 100% gratis, offline-first.
+              <strong>KasirGo+</strong>. Sistem POS (Point of Sale) terbaik untuk HP, tablet, dan laptop — offline-first, mulai gratis kapan saja.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-1">
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700 text-sm">
-                    <span className="text-blue-600 font-bold">5.781</span> pemilik usaha telah bergabung
+                    <span className="text-blue-600 font-bold">2.781</span> pemilik usaha telah bergabung
                   </p>
                 </div>
               </div>
@@ -75,17 +75,15 @@ const HeroSection = () => {
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-500 pt-1">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500" />
-                Tanpa daftar
+                Mudah & praktis
               </div>
-              <span className="text-gray-400 font-bold">•</span>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500" />
-                Tanpa kartu kredit
+                Harga terjangkau
               </div>
-              <span className="text-gray-400 font-bold">•</span>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500" />
-                Langsung pakai
+                Ramah UMKM
               </div>
             </div>
           </div>

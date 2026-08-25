@@ -3,65 +3,65 @@ const FiturSection = () => {
     {
       icon: "⚡",
       iconBg: "bg-[#3958A3]/10",
-      title: "Kasir & POS Cepat",
+      title: "Transaksi Cepat & Fleksibel",
       description:
-        "Proses transaksi penjualan kasir dalam hitungan detik. Pilih produk, atur diskon, dan tentukan metode pembayaran dengan mudah.",
+        "Terima pembayaran tunai, QRIS, transfer, hingga kasbon dalam satu proses transaksi yang ringkas.",
     },
     {
-      icon: "📋",
+      icon: "📦",
       iconBg: "bg-[#3958A3]/10",
-      title: "Open Bill",
+      title: "Manajemen Produk & Kategori",
       description:
-        "Simpan transaksi sebagai bon terbuka. Catat nama pelanggan, nomor meja, catatan per item, dan keterangan tambahan.",
+        "Atur harga, stok, barcode, dan variasi produk dengan rapi per kategori.",
+    },
+    {
+      icon: "🏷️",
+      iconBg: "bg-[#3958A3]/10",
+      title: "Diskon & Promo",
+      description:
+        "Atur potongan harga untuk mendorong penjualan lebih tinggi.",
+    },
+    {
+      icon: "🧑‍🤝‍🧑",
+      iconBg: "bg-[#3958A3]/10",
+      title: "Pelanggan & Member",
+      description:
+        "Simpan data pelanggan untuk layanan yang lebih personal dan program loyalitas.",
+    },
+    {
+      icon: "📊",
+      iconBg: "bg-indigo-100",
+      title: "Laporan Penjualan",
+      description:
+        "Lihat ringkasan per periode, detail tiap transaksi, dan rekap metode pembayaran.",
+    },
+    {
+      icon: "💸",
+      iconBg: "bg-green-100",
+      title: "Pencatatan Pengeluaran",
+      description:
+        "Catat biaya operasional agar perhitungan keuntungan usaha lebih akurat.",
     },
     {
       icon: "👥",
       iconBg: "bg-[#3958A3]/10",
       title: "Multi-User & Hak Akses",
       description:
-        "Mode owner + staf opsional dengan login PIN 4–6 digit. Atur izin per staf (kelola produk, lihat laporan, refund, dll).",
+        "Atur kasir dan admin dengan izin akses berbeda (RBAC) sesuai peran masing-masing.",
     },
     {
-      icon: "📦",
-      iconBg: "bg-[#3958A3]/10",
-      title: "Manajemen Produk",
-      description:
-        "Tambah produk dengan foto, SKU, barcode, kategori, deskripsi, satuan, harga jual, dan HPP. Pencarian cepat di kasir.",
-    },
-    {
-      icon: "🧊",
-      iconBg: "bg-[#3958A3]/10",
-      title: "Stok Otomatis",
-      description:
-        "Stok masuk dari supplier dan stok keluar (rusak/hilang/retur). HPP otomatis dengan metode weighted average.",
-    },
-    {
-      icon: "📏",
-      iconBg: "bg-[#3958A3]/10",
-      title: "Master Data Satuan",
-      description:
-        "Kelola satuan produk (pcs, kg, liter, dll) dengan CRUD lengkap. Aman dari penghapusan saat masih dipakai.",
-    },
-    {
-      icon: "📊",
-      iconBg: "bg-indigo-100",
-      title: "Laporan Laba Rugi",
-      description:
-        "Laporan penjualan harian, mingguan, bulanan dengan detail laba rugi. Export ke Excel/PDF untuk analisa usaha.",
-    },
-    {
-      icon: "💳",
-      iconBg: "bg-green-100",
-      title: "Multi Metode Bayar",
-      description:
-        "Dukung tunai, transfer bank, QRIS, e-wallet, dan campuran. Cetak struk thermal 58mm atau 80mm.",
-    },
-    {
-      icon: "🔄",
+      icon: "🖨️",
       iconBg: "bg-amber-100",
-      title: "Riwayat & Refund",
+      title: "Printer & Struk",
       description:
-        "Riwayat transaksi lengkap dengan pencarian canggih. Proses refund partial atau penuh dengan catatan lengkap.",
+        "Atur printer, custom tampilan struk, dan cetak ulang transaksi kapan saja.",
+    },
+    {
+      icon: "🔒",
+      iconBg: "bg-teal-100",
+      title: "Data Aman, Lokal & Server",
+      description:
+        "Data transaksi tersimpan aman di perangkatmu dan otomatis tersinkron ke server, jadi tetap terjaga meski ganti HP.",
     },
   ];
 
@@ -76,7 +76,7 @@ const FiturSection = () => {
             Fitur Lengkap Aplikasi Kasir & POS Gratis
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-            Mulai dari mesin kasir cepat hingga laporan laba rugi — semuanya dirancang untuk membantu point of sale bisnis Anda tanpa biaya.
+            Mulai dari transaksi cepat hingga laporan penjualan — semuanya dirancang untuk membantu usahamu jualan lebih rapi dan efisien.
           </p>
         </div>
 

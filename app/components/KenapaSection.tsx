@@ -3,30 +3,30 @@ const KenapaSection = () => {
     {
       icon: "🎁",
       iconBg: "bg-[#3958A3]/10",
-      title: "Aplikasi Kasir Gratis Selamanya",
+      title: "Gratis dengan Limit, Upgrade Kapan Perlu",
       description:
-        "Tidak ada biaya langganan atau biaya tersembunyi. Aplikasi kasir kami gratis selamanya dengan fitur POS lengkap tanpa batasan fitur.",
+        "Mulai gratis dengan akses hampir semua fitur, tinggal install dan langsung transaksi. Butuh lebih longgar? Upgrade ke Pro yang terjangkau.",
     },
     {
       icon: "🛡️",
       iconBg: "bg-teal-100",
       title: "POS Offline-First & Aman",
       description:
-        "Sistem point of sale offline yang menyimpan seluruh data di perangkatmu. Transaksi lancar tanpa kuota internet, privasi terjaga 100%.",
+        "Tetap bisa transaksi tanpa internet, data otomatis sinkron begitu online lagi. Privasi terjaga, kasir jalan terus kapan saja.",
     },
     {
-      icon: "⬇️",
+      icon: "🏪",
       iconBg: "bg-green-100",
-      title: "Backup & Restore Mudah",
+      title: "Cocok untuk Semua Jenis Usaha",
       description:
-        "Backup data ke file JSON kapan saja. Pindah HP? Tinggal restore. Data kasir digital kamu selalu aman.",
+        "Dari warung, FnB, coffee shop, sampai barbershop — KasirGo+ fleksibel mengikuti cara kamu jualan.",
     },
     {
-      icon: "</>",
+      icon: "👥",
       iconBg: "bg-amber-100",
-      title: "Open Source & Aktif",
+      title: "Multi-User & Kontrol Akses",
       description:
-        "Kode sumber terbuka. Komunitas aktif mengembangkan sistem point of sale ini secara rutin dengan fitur terbaru.",
+        "Atur kasir dan admin dengan izin akses berbeda (RBAC), cocok untuk usaha dengan lebih dari satu pegawai.",
     },
   ];
 
@@ -38,7 +38,7 @@ const KenapaSection = () => {
             Kenapa <span className="text-blue-600">KasirGo+</span>?
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-            Dibuat dengan hati untuk membantu UMKM Indonesia naik kelas, tanpa beban biaya.
+            Dibuat dengan hati untuk membantu UMKM Indonesia naik kelas, dengan harga yang bersahabat di kantong.
           </p>
         </div>
 

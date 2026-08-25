@@ -9,7 +9,7 @@ const FAQSection = () => {
     {
       question: "Apakah benar-benar gratis?",
       answer:
-        "Ya, 100% gratis selamanya! Tidak ada biaya langganan, tidak ada biaya tersembunyi, tidak ada batasan jumlah transaksi, produk, atau pengguna. Semua fitur inti POS bisa Anda gunakan tanpa bayar sepeser pun.",
+        "Bisa dipakai gratis dengan akses hampir semua fitur POS — tinggal install dan langsung transaksi tanpa bayar. Kalau butuh lebih longgar, tersedia opsi upgrade ke Pro seharga Rp24.900/bulan.",
     },
     {
       question: "Apakah butuh internet?",
@@ -29,22 +29,17 @@ const FAQSection = () => {
     {
       question: "Bagaimana kalau HP rusak/hilang?",
       answer:
-        "Jangan panik! Selalu lakukan backup data secara berkala ke file JSON (bisa simpan ke Google Drive, email, atau HP lain). Jika HP rusak/hilang, tinggal install KasirGo+ di HP baru dan restore file backup yang Anda simpan.",
+        "Jangan panik! Selalu lakukan backup data secara berkala (bisa simpan ke Google Drive, email, atau HP lain). Jika HP rusak/hilang, tinggal install KasirGo+ di HP baru dan restore file backup yang Anda simpan.",
     },
     {
       question: "Apakah data saya aman?",
       answer:
-        "Sangat aman. Semua data tersimpan di perangkat Anda sendiri (local storage), tidak dikirim ke server kami tanpa izin Anda. Privasi dan keamanan data usaha Anda adalah prioritas utama kami.",
+        "Aman. KasirGo+ offline-first — data transaksi tersimpan di perangkat Anda dan otomatis tersinkron ke server saat online, jadi tetap terjaga meski ganti HP. Privasi dan keamanan data usaha Anda adalah prioritas utama kami.",
     },
     {
       question: "Bisa dipakai di tablet atau laptop?",
       answer:
-        "Bisa! Aplikasi KasirGo+ dirancang responsive untuk layar HP (5 inch) hingga tablet (10 inch). Untuk laptop/PC, Anda bisa pakai emulator Android atau versi web yang sedang kami kembangkan.",
-    },
-    {
-      question: "Apakah ada dark mode?",
-      answer:
-        "Ada! Anda bisa memilih tema terang atau gelap sesuai kenyamanan mata Anda. Fitur ini sangat berguna jika Anda sering buka toko sampai malam hari.",
+        "Bisa! Aplikasi KasirGo+ dirancang responsive untuk layar HP (5 inch) hingga tablet (10 inch). Untuk laptop/PC, Anda bisa pakai emulator Android.",
     },
     {
       question: "Bagaimana cara cetak struk?",

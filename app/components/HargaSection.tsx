@@ -6,73 +6,85 @@ const HargaSection = () => {
   const [faqOpen, setFaqOpen] = useState<number | null>(0);
 
   const pricingPlans = [
-    { device: "2 Perangkat", price: "Rp 19.900", period: "/bln" },
-    { device: "3 Perangkat", price: "Rp 24.900", period: "/bln" },
-    { device: "10 Perangkat", price: "Rp 69.000", period: "/bln" },
+    { label: "Bulanan", price: "Rp24.900", period: "/bulan" },
+    { label: "3 Bulan", price: "Rp64.900", period: "/3 bulan" },
+    { label: "Tahunan", price: "Rp249.900", period: "/tahun" },
   ];
 
   const cloudFeatures = [
     {
-      icon: "🛡️",
+      icon: "📦",
       iconBg: "bg-[#3958A3]/10",
-      title: "Backup Cloud Otomatis & Aman",
+      title: "Produk Tanpa Batas",
       description:
-        "Data transaksi ter-backup secara instan ke cloud yang aman. Tidak perlu takut kehilangan data saat HP rusak/hilang.",
+        "Tambah produk sebanyak apapun tanpa batasan jumlah, cocok untuk usaha yang terus berkembang.",
     },
     {
-      icon: "🔄",
+      icon: "⚡",
       iconBg: "bg-[#3958A3]/10",
-      title: "Sinkronisasi Real-Time Multi-Perangkat",
+      title: "Transaksi Unlimited",
       description:
-        "Hubungkan kasir, bagian admin, owner, dan dapur sekaligus. Data sinkron instan di semua perangkat.",
+        "Proses transaksi sebanyak apapun setiap hari tanpa batas harian.",
     },
     {
-      icon: "☁️",
+      icon: "👥",
       iconBg: "bg-[#3958A3]/10",
-      title: "Akses Dashboard Web Lanjutan",
+      title: "Kasir Tanpa Batas",
       description:
-        "Pantau dan analisis laporan penjualan real-time langsung dari web browser Anda kapan saja.",
+        "Tambah akun kasir sesuai kebutuhan tim, tidak dibatasi hanya 1 kasir.",
     },
     {
-      icon: "🛒",
+      icon: "🧾",
       iconBg: "bg-[#3958A3]/10",
-      title: "Katalog & Menu Digital",
+      title: "Custom Struk",
       description:
-        "Dapatkan katalog online gratis dan buat pelanggan bisa melihat produk Anda dengan mudah di Market.",
+        "Sesuaikan tampilan struk dengan logo dan informasi toko Anda sendiri.",
+    },
+    {
+      icon: "📊",
+      iconBg: "bg-[#3958A3]/10",
+      title: "Export Laporan",
+      description:
+        "Unduh laporan penjualan dalam format Excel, PDF, dan lainnya untuk analisa usaha.",
+    },
+    {
+      icon: "🚀",
+      iconBg: "bg-[#3958A3]/10",
+      title: "Prioritas Fitur Terbaru",
+      description:
+        "Dapatkan akses lebih awal ke fitur-fitur baru yang kami kembangkan.",
     },
   ];
 
   const comparisonData = [
-    { feature: "Batas Transaksi Harian", gratis: "Tanpa Batas", pro: "Tanpa Batas", proHighlight: false },
-    { feature: "Batas Jumlah Produk & SKU", gratis: "Tanpa Batas", pro: "Tanpa Batas", proHighlight: false },
-    { feature: "Cetak Struk Bluetooth Termal & PDF", gratis: "check", pro: "check", proHighlight: false },
-    { feature: "Jumlah Perangkat Terhubung", gratis: "Maksimal 1 Perangkat", pro: "2, 3, hingga 10 Perangkat", proHighlight: true },
-    { feature: "Sinkronisasi Real-time Antar Perangkat", gratis: "cross", pro: "Ya (Otomatis melalui Cloud)", proHighlight: true },
-    { feature: "Penyimpanan & Keamanan Data", gratis: "Lokal di Perangkat (HP/Tablet)", pro: "Cadangan Otomatis Cloud (Aman)", proHighlight: true },
-    { feature: "Akses Dashboard Web Online", gratis: "cross", pro: "Ya (dashboard.kasirgoplus.id)", proHighlight: true },
-    { feature: "Menu Digital & listing Market", gratis: "cross", pro: "Ya (market.kasirgoplus.id)", proHighlight: true },
+    { feature: "Jumlah Produk", gratis: "Maksimal 30 Produk", pro: "Tanpa Batas", proHighlight: true },
+    { feature: "Transaksi Harian", gratis: "Maksimal 30 Transaksi/Hari", pro: "Tanpa Batas", proHighlight: true },
+    { feature: "Jumlah Kasir", gratis: "1 Kasir", pro: "Tanpa Batas", proHighlight: true },
+    { feature: "Custom Struk", gratis: "cross", pro: "check", proHighlight: false },
+    { feature: "Export Laporan (Excel, PDF, dll)", gratis: "cross", pro: "check", proHighlight: false },
+    { feature: "Prioritas Fitur Terbaru", gratis: "cross", pro: "check", proHighlight: false },
   ];
 
   const faqList = [
     {
-      question: "Apa perbedaan utama antara paket Gratis Selamanya dan paket Berlangganan?",
+      question: "Apa perbedaan utama antara paket Gratis dan Pro?",
       answer:
-        "Paket Gratis Selamanya berjalan secara lokal (offline-first) untuk 1 perangkat. Semua data disimpan di perangkat Anda sendiri. Sementara paket Berlangganan memungkinkan Anda menambahkan 2, 3, hingga 10 perangkat yang tersinkronisasi secara otomatis melalui cloud secara real-time, sehingga memudahkan koordinasi tim kasir dan owner.",
+        "Paket Gratis cocok untuk coba pakai, dengan batas 30 produk, 30 transaksi per hari, dan 1 akun kasir. Paket Pro menghilangkan semua batas itu (produk, transaksi, dan kasir tanpa batas), plus custom struk, export laporan (Excel, PDF, dll), dan prioritas akses ke fitur terbaru.",
     },
     {
-      question: "Apakah ada batasan jumlah transaksi atau produk pada paket Gratis?",
+      question: "Apakah ada biaya tersembunyi di paket Pro?",
       answer:
-        "TIDAK ADA BATASAN SAMA SEKALI. Baik paket Gratis maupun Berlangganan keduanya menyediakan fitur inti POS tanpa batas jumlah transaksi, tanpa batas jumlah produk/SKU, dan tanpa iklan. Fitur inti 100% gratis selamanya untuk 1 perangkat.",
+        "Tidak ada. Harga yang tertera (Rp24.900/bulan, Rp64.900/3 bulan, atau Rp249.900/tahun) adalah harga akhir yang Anda bayar, tanpa biaya tambahan lainnya.",
     },
     {
-      question: "Bagaimana cara menambah perangkat baru ke sistem kasir saya?",
+      question: "Apakah saya bisa membatalkan langganan Pro kapan saja?",
       answer:
-        "Cukup install aplikasi KasirGo+ di perangkat baru, lalu masuk dengan kode toko yang sama dari perangkat utama Anda. Jika paket Berlangganan, sinkronisasi otomatis dimulai saat perangkat terhubung ke internet.",
+        "Bisa! Anda bisa membatalkan langganan kapan saja tanpa denda. Paket Pro tetap aktif sampai akhir periode yang sudah dibayar, setelah itu akun kembali ke paket Gratis dengan batasannya (data Anda tidak hilang).",
     },
     {
-      question: "Apakah saya bisa membatalkan langganan perangkat tambahan kapan saja?",
+      question: "Kalau sudah lewat batas 30 produk atau 30 transaksi/hari di paket Gratis, apa yang terjadi?",
       answer:
-        "Bisa! Anda bisa membatalkan langganan kapan saja tanpa denda. Saat dibatalkan, paket aktif sampai akhir periode berbayar Anda tetap bisa menikmati fitur cloud, dan setelah itu sistem kembali ke paket Gratis 1 perangkat (data lokal Anda tidak hilang).",
+        "Anda perlu upgrade ke Pro untuk menambah produk baru atau memproses transaksi lebih dari batas harian tersebut. Data dan transaksi yang sudah ada sebelumnya tetap aman.",
     },
   ];
 
@@ -91,8 +103,8 @@ const HargaSection = () => {
             <span className="text-blue-600">Skala Bisnis Anda</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-            Semua fitur esensial POS & kelola stok 100% Gratis Selamanya tanpa batasan transaksi.
-            Hubungkan beberapa perangkat Anda dengan berlangganan untuk sinkronisasi data real-time.
+            Mulai gratis dengan akses hampir semua fitur POS & kelola stok, cocok untuk kebutuhan harian usahamu.
+            Butuh lebih longgar? Tinggal upgrade ke Pro kapan saja.
           </p>
         </div>
 
@@ -100,14 +112,14 @@ const HargaSection = () => {
           <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl shadow-gray-200/60">
             <div className="flex items-center gap-3 mb-2">
               <span className="text-2xl">✨</span>
-              <h3 className="text-2xl font-extrabold text-gray-900">Paket Perangkat</h3>
+              <h3 className="text-2xl font-extrabold text-gray-900">Paket Pro</h3>
             </div>
             <p className="text-gray-600 mb-6 pb-6 border-b border-gray-200">
-              Paket gratis (1 perangkat)
+              Paket Gratis: 30 produk, 30 transaksi/hari, 1 kasir — cocok untuk coba pakai
             </p>
 
             <p className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
-              Tambah Perangkat Dengan Berlangganan:
+              Pilih Durasi Berlangganan Pro:
             </p>
 
             <div className="space-y-4">
@@ -118,7 +130,7 @@ const HargaSection = () => {
               >
                 <div>
                   <p className="text-xl font-bold text-gray-900 mb-1">
-                  {plan.device}
+                  {plan.label}
                 </p>
                 <p className="text-gray-600 font-medium">
                   <span className="font-semibold text-gray-900">{plan.price}</span>
@@ -134,11 +146,14 @@ const HargaSection = () => {
               </div>
             ))}
             </div>
+            <p className="text-sm text-gray-500 text-center mt-5">
+              Tidak ada biaya tersembunyi. Bisa dibatalkan kapan saja.
+            </p>
           </div>
 
           <div className="pt-4 lg:pl-4">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">
-              Keunggulan Fitur Cloud & Multi-Perangkat:
+              Keunggulan Paket Pro:
             </h3>
             <div className="space-y-7">
               {cloudFeatures.map((feat, idx) => (
@@ -168,10 +183,10 @@ const HargaSection = () => {
             <div className="grid grid-cols-3 bg-gray-50/80 border-b border-gray-200">
               <div className="p-5 sm:p-6 font-bold text-gray-900 text-base sm:text-lg">Fitur Utama</div>
               <div className="p-5 sm:p-6 font-bold text-gray-900 text-base sm:text-lg text-center">
-                Gratis (1 Perangkat)
+                Gratis
               </div>
               <div className="p-5 sm:p-6 font-bold text-gray-900 text-base sm:text-lg text-center">
-                Paket Berlangganan
+                Pro
               </div>
             </div>
             {comparisonData.map((row, idx) => (

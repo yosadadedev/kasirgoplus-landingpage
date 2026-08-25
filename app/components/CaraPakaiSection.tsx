@@ -1,25 +1,27 @@
+import Image from "next/image";
+
 const CaraPakaiSection = () => {
   const steps = [
     {
       number: "1",
-      icon: "⬇️",
+      icon: "📲",
       title: "Download di Play Store",
       description:
         "Unduh aplikasi KasirGo+ dari Google Play Store di handphone Android Anda. Gratis tanpa iklan mengganggu.",
     },
     {
       number: "2",
-      icon: "⚙️",
+      icon: "🛠️",
       title: "Setup Toko",
       description:
         "Isi nama toko, alamat, dan pilih warna tema. Bisa langsung muat data contoh untuk coba-coba tanpa input manual.",
     },
     {
       number: "3",
-      icon: "🚀",
+      icon: "🛍️",
       title: "Mulai Jualan!",
       description:
-        "Tambah produk, proses transaksi, dan pantau laporan. Semua gratis tanpa batasan! Bisa langsung pakai dari HP.",
+        "Tambah produk, proses transaksi, dan pantau laporan. Langsung bisa dipakai dari HP, gratis dengan akses hampir semua fitur.",
     },
   ];
 
@@ -44,11 +46,11 @@ const CaraPakaiSection = () => {
               key={index}
               className="relative group"
             >
-              <div className="absolute -top-8 left-6 text-[120px] font-black text-gray-100 leading-none select-none pointer-events-none group-hover:text-[#3958A3]/10 transition-colors">
+              <div className="absolute -top-14 left-6 text-[120px] font-black text-gray-200 leading-none select-none pointer-events-none group-hover:text-[#3958A3]/20 transition-colors">
                 {step.number}
               </div>
               <div className="relative bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 hover:shadow-xl hover:shadow-gray-200/50 hover:border-[#3958A3]/15 hover:-translate-y-1 transition-all duration-300">
-                <div className="relative w-16 h-16 bg-[#3958A3] rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg shadow-[#3958A3]/25 group-hover:scale-110 transition-transform duration-300">
+                <div className="relative w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
                   {step.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -67,12 +69,18 @@ const CaraPakaiSection = () => {
             href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-10 py-4 bg-[#3958A3] hover:bg-[#304c8d] text-white rounded-full transition-all font-semibold text-lg shadow-xl shadow-[#3958A3]/30 hover:shadow-[#3958A3]/50 hover:-translate-y-1"
+            className="inline-flex items-center gap-3 px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
           >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 512 512">
-              <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
-            </svg>
-            Download Gratis di Play Store
+            <Image
+              src="/google-play-store-icon.svg"
+              alt="Google Play"
+              width={36}
+              height={36}
+            />
+            <span className="flex flex-col items-start leading-tight">
+              <span className="text-xs text-gray-500">Download di</span>
+              <span className="text-lg font-bold text-gray-800">Play Store</span>
+            </span>
           </a>
         </div>
       </div>

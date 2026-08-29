@@ -123,7 +123,7 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                <div className="relative w-full h-full z-20 scale-100 shadow-[0_18px_38px_-12px_rgba(0,0,0,0.35)]">
+                <div className="relative rounded-[2.3rem] w-full h-full z-20 scale-100 shadow-[0_18px_38px_-12px_rgba(0,0,0,0.35)]">
                   <div className="relative w-full h-full bg-gray-900 rounded-[2.35rem] p-[1.5px] sm:p-1.5 shadow-2xl shadow-gray-900/45">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[1.3rem] bg-gray-900 rounded-b-[0.9rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.9rem] bg-white">

@@ -90,10 +90,10 @@ const HeroSection = () => {
 
           <div className="relative flex items-center justify-center">
             <div className="relative w-full flex items-center justify-center">
-              <div className="relative w-full max-w-[17rem] sm:max-w-[17.5rem] aspect-[9/19] mx-auto">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-[48%] md:-left-[44%] w-[78%] max-w-[13rem] aspect-[9/19] z-0 transition-all hover:scale-[1.02] duration-500 saturate-[1.03]">
-                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1.5 shadow-xl shadow-gray-900/25">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
+              <div className="relative w-full max-w-[11rem] sm:max-w-[17rem] md:max-w-[17.5rem] aspect-[9/19] mx-auto">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-[34%] sm:-left-[48%] md:-left-[44%] w-[68%] sm:w-[78%] max-w-[13rem] aspect-[9/19] z-0 transition-all hover:scale-[1.02] duration-500 saturate-[1.03]">
+                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1 sm:p-1.5 shadow-xl shadow-gray-900/25">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-[0.85rem] sm:w-20 sm:h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.65rem] bg-white">
                       <Image
                         src="/trnasaksi-screen.jpeg"
@@ -107,9 +107,9 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                <div className="absolute top-1/2 -translate-y-1/2 -right-[48%] md:-right-[44%] w-[78%] max-w-[13rem] aspect-[9/19] z-0 transition-all hover:scale-[1.02] duration-500 saturate-[1.03]">
-                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1.5 shadow-xl shadow-gray-900/25">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
+                <div className="absolute top-1/2 -translate-y-1/2 -right-[34%] sm:-right-[48%] md:-right-[44%] w-[68%] sm:w-[78%] max-w-[13rem] aspect-[9/19] z-0 transition-all hover:scale-[1.02] duration-500 saturate-[1.03]">
+                  <div className="relative w-full h-full bg-gray-900 rounded-[2.1rem] p-1 sm:p-1.5 shadow-xl shadow-gray-900/25">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-[0.85rem] sm:w-20 sm:h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.65rem] bg-white">
                       <Image
                         src="/report-screen.jpeg"
@@ -124,8 +124,8 @@ const HeroSection = () => {
                 </div>
 
                 <div className="relative rounded-[2.3rem] w-full h-full z-20 scale-100 shadow-[0_18px_38px_-12px_rgba(0,0,0,0.35)]">
-                  <div className="relative w-full h-full bg-gray-900 rounded-[2.35rem] p-[1.5px] sm:p-1.5 shadow-2xl shadow-gray-900/45">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[1.3rem] bg-gray-900 rounded-b-[0.9rem] z-30" />
+                  <div className="relative w-full h-full bg-gray-900 rounded-[2.35rem] p-1.5 shadow-2xl shadow-gray-900/45">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-[0.95rem] sm:w-24 sm:h-[1.3rem] bg-gray-900 rounded-b-[0.9rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.9rem] bg-white">
                       <Image
                         src="/kasir-screen.jpeg"

@@ -109,7 +109,7 @@ const HargaSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-24 items-start">
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl shadow-gray-200/60">
+          <div className="min-w-0 bg-white border border-gray-200 rounded-3xl p-8 shadow-xl shadow-gray-200/60">
             <div className="flex items-center gap-3 mb-2">
               <span className="text-2xl">✨</span>
               <h3 className="text-2xl font-extrabold text-gray-900">Paket Pro</h3>
@@ -151,7 +151,7 @@ const HargaSection = () => {
             </p>
           </div>
 
-          <div className="pt-4 lg:pl-4">
+          <div className="min-w-0 pt-4 lg:pl-4">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">
               Keunggulan Paket Pro:
             </h3>
@@ -161,7 +161,7 @@ const HargaSection = () => {
                   <div className={`flex-shrink-0 w-11 h-11 ${feat.iconBg} rounded-xl flex items-center justify-center text-xl`}>
                     {feat.icon}
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h4 className="text-lg font-bold text-gray-900 mb-1.5">
                       {feat.title}
                     </h4>

@@ -58,15 +58,41 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-bold text-lg mb-5">Perusahaan</h4>
-            <ul className="space-y-3">
-              {["Tentang Kami", "Blog", "Kontak", "Karir"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+            <h4 className="text-white font-bold text-lg mb-5">Hubungi Kami</h4>
+            <ul className="space-y-5">
+              <li>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-[#5b7fd4] mb-1">
+                  WhatsApp
+                </span>
+                <a
+                  href="https://wa.me/62859106610011"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
+                  0859-1066-10011
+                </a>
+              </li>
+              <li>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-[#5b7fd4] mb-1">
+                  Email
+                </span>
+                <a
+                  href="mailto:halokasirgoplus@gmail.com"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
+                  halokasirgoplus@gmail.com
+                </a>
+              </li>
+              <li>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-[#5b7fd4] mb-1">
+                  Alamat
+                </span>
+                <span className="block text-gray-400 leading-relaxed">
+                  Jl. Mijil, Gedongan, Bangunjiwo, Kec. Kasihan, Kabupaten Bantul,
+                  Daerah Istimewa Yogyakarta 55184
+                </span>
+              </li>
             </ul>
           </div>
         </div>

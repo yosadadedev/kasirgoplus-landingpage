@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import { faqs, hargaFaqs, type Faq } from "./data/faqs";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -16,74 +17,167 @@ const jetBrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://kasirgoplus.my.id";
+const siteUrl = "https://kasirgoplus.com";
+const playStoreUrl = "https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id";
+
+const title = "KasirGo+ — Aplikasi Kasir Gratis & POS Offline untuk UMKM";
+const description =
+  "Aplikasi kasir Android gratis untuk toko, warung & UMKM. Transaksi cepat, kelola stok, cetak struk, laporan laba rugi. Tetap jalan tanpa internet.";
+
+export const viewport: Viewport = {
+  themeColor: "#3958A3",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "KasirGo+ - Aplikasi Kasir Digital & POS untuk UMKM, Mudah & Praktis",
-  description: "KasirGo+ adalah aplikasi kasir digital dan POS (Point of Sale) untuk mengelola penjualan, stok barang, dan keuangan usaha Anda. Cocok untuk toko, warung, kulakan, dan UMKM Indonesia. Offline-first, aman, dan bisa mulai gratis kapan saja.",
+  title,
+  description,
+  applicationName: "KasirGo+",
   keywords: [
     "aplikasi kasir",
+    "aplikasi kasir gratis",
+    "aplikasi kasir android",
+    "aplikasi kasir offline",
+    "aplikasi kasir umkm",
     "kasir digital",
-    "pos gratis",
+    "aplikasi pos",
     "point of sale",
-    "kasir online",
     "aplikasi toko",
+    "aplikasi warung",
     "manajemen stok",
-    "laporan keuangan",
-    "umkm",
-    "kasirgo+"
+    "cetak struk thermal",
+    "laporan laba rugi",
+    "kasirgo+",
   ],
-  authors: [{ name: "KasirGo+" }],
+  authors: [{ name: "Yosada Labs" }],
+  creator: "Yosada Labs",
+  publisher: "Yosada Labs",
+  category: "business",
   icons: {
     icon: "/favicon.svg",
   },
   alternates: {
     canonical: "/",
   },
+  // Gambar OG & Twitter diambil otomatis dari app/opengraph-image.tsx
   openGraph: {
-    title: "KasirGo+ - Aplikasi Kasir Digital & POS untuk UMKM",
-    description: "Kelola penjualan, stok barang, dan keuangan dengan aplikasi kasir KasirGo+. Sistem POS terbaik untuk HP, tablet, dan laptop — mudah & praktis dipakai.",
+    title,
+    description,
     type: "website",
     locale: "id_ID",
     url: siteUrl,
     siteName: "KasirGo+",
-    images: [
-      {
-        url: "/kasir-screen.jpeg",
-        width: 575,
-        height: 1280,
-        alt: "Tampilan aplikasi KasirGo+",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KasirGo+ - Aplikasi Kasir Digital & POS untuk UMKM",
-    description: "Aplikasi kasir digital dan POS untuk UMKM Indonesia, mudah & praktis dipakai.",
-    images: ["/kasir-screen.jpeg"],
-  }
+    title,
+    description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
+
+const toFaqEntity = (faq: Faq) => ({
+  "@type": "Question",
+  name: faq.question,
+  acceptedAnswer: { "@type": "Answer", text: faq.answer },
+});
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "KasirGo+",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Android",
-  description:
-    "Aplikasi kasir digital dan POS (Point of Sale) untuk UMKM Indonesia — kelola penjualan, stok barang, dan keuangan usaha. Offline-first, bisa mulai gratis kapan saja.",
-  url: siteUrl,
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "IDR",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.7",
-    ratingCount: "62",
-  },
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "KasirGo+",
+      url: siteUrl,
+      logo: `${siteUrl}/kasirgoplus-icon.svg`,
+      email: "halokasirgoplus@gmail.com",
+      telephone: "+62859106610011",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Jl. Mijil, Gedongan, Bangunjiwo",
+        addressLocality: "Kasihan, Bantul",
+        addressRegion: "Daerah Istimewa Yogyakarta",
+        postalCode: "55184",
+        addressCountry: "ID",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        telephone: "+62859106610011",
+        email: "halokasirgoplus@gmail.com",
+        availableLanguage: ["id"],
+      },
+      parentOrganization: { "@type": "Organization", name: "Yosada Labs" },
+      sameAs: [playStoreUrl, "https://www.tiktok.com/@kasirgoplus"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "KasirGo+",
+      inLanguage: "id-ID",
+      publisher: { "@id": `${siteUrl}/#organization` },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${siteUrl}/#app`,
+      name: "KasirGo+",
+      alternateName: "KasirGo+ Aplikasi Kasir UMKM",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Android",
+      softwareVersion: "1.4.0",
+      inLanguage: "id-ID",
+      description:
+        "Aplikasi kasir digital dan POS (Point of Sale) untuk UMKM Indonesia — kelola penjualan, stok barang, dan keuangan usaha. Offline-first, bisa mulai gratis kapan saja.",
+      url: siteUrl,
+      downloadUrl: playStoreUrl,
+      installUrl: playStoreUrl,
+      screenshot: [
+        `${siteUrl}/kasir-screen.jpeg`,
+        `${siteUrl}/transaksi-screen.jpeg`,
+        `${siteUrl}/report-screen.jpeg`,
+      ],
+      featureList: [
+        "Kasir & POS cepat",
+        "Open bill",
+        "Multi-user & hak akses",
+        "Manajemen produk & stok",
+        "Laporan laba rugi",
+        "Multi metode bayar (tunai, transfer, QRIS, e-wallet)",
+        "Cetak struk thermal 58mm/80mm",
+        "Kasbon",
+        "Pelanggan & member",
+        "Pencatatan pengeluaran",
+        "Offline-first, sinkron saat online",
+      ],
+      publisher: { "@id": `${siteUrl}/#organization` },
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "IDR",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.7",
+        ratingCount: "62",
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${siteUrl}/#faq`,
+      mainEntity: [...faqs, ...hargaFaqs].map(toFaqEntity),
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

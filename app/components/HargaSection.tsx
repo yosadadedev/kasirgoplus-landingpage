@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { hargaFaqs } from "../data/faqs";
 
 const HargaSection = () => {
   const [faqOpen, setFaqOpen] = useState<number | null>(0);
@@ -63,29 +64,6 @@ const HargaSection = () => {
     { feature: "Custom Struk", gratis: "cross", pro: "check", proHighlight: false },
     { feature: "Export Laporan (Excel, PDF, dll)", gratis: "cross", pro: "check", proHighlight: false },
     { feature: "Prioritas Fitur Terbaru", gratis: "cross", pro: "check", proHighlight: false },
-  ];
-
-  const faqList = [
-    {
-      question: "Apa perbedaan utama antara paket Gratis dan Pro?",
-      answer:
-        "Paket Gratis cocok untuk coba pakai, dengan batas 30 produk, 30 transaksi per hari, dan 1 akun kasir. Paket Pro menghilangkan semua batas itu (produk, transaksi, dan kasir tanpa batas), plus custom struk, export laporan (Excel, PDF, dll), dan prioritas akses ke fitur terbaru.",
-    },
-    {
-      question: "Apakah ada biaya tersembunyi di paket Pro?",
-      answer:
-        "Tidak ada. Harga yang tertera (Rp24.900/bulan, Rp64.900/3 bulan, atau Rp249.900/tahun) adalah harga akhir yang Anda bayar, tanpa biaya tambahan lainnya.",
-    },
-    {
-      question: "Apakah saya bisa membatalkan langganan Pro kapan saja?",
-      answer:
-        "Bisa! Anda bisa membatalkan langganan kapan saja tanpa denda. Paket Pro tetap aktif sampai akhir periode yang sudah dibayar, setelah itu akun kembali ke paket Gratis dengan batasannya (data Anda tidak hilang).",
-    },
-    {
-      question: "Kalau sudah lewat batas 30 produk atau 30 transaksi/hari di paket Gratis, apa yang terjadi?",
-      answer:
-        "Anda perlu upgrade ke Pro untuk menambah produk baru atau memproses transaksi lebih dari batas harian tersebut. Data dan transaksi yang sudah ada sebelumnya tetap aman.",
-    },
   ];
 
   return (
@@ -242,7 +220,7 @@ const HargaSection = () => {
             Pertanyaan Umum seputar Harga
           </h3>
           <div className="space-y-4">
-            {faqList.map((faq, idx) => (
+            {hargaFaqs.map((faq, idx) => (
               <div
                 key={idx}
                 className={`bg-white rounded-3xl border border-gray-200 overflow-hidden ${
@@ -252,6 +230,7 @@ const HargaSection = () => {
                 <button
                   type="button"
                   onClick={() => setFaqOpen(faqOpen === idx ? null : idx)}
+                  aria-expanded={faqOpen === idx}
                   className="w-full flex items-center justify-between gap-4 text-left px-6 sm:px-7 py-5 sm:py-6 group"
                 >
                   <div className="flex items-center gap-3 flex-1">

@@ -29,7 +29,7 @@ const HeroSection = () => {
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
               Kelola penjualan, stok barang, dan keuangan dengan aplikasi kasir gratis{" "}
-              <strong>KasirGo+</strong>. Sistem POS (Point of Sale) terbaik untuk HP, tablet, dan laptop — offline-first, mulai gratis kapan saja.
+              <strong>KasirGo+</strong>. Sistem POS (Point of Sale) terbaik untuk HP dan tablet Android — bisa offline maupun online, mulai gratis kapan saja.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-1">
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700 text-sm">
-                    <span className="text-blue-600 font-bold">3.170</span> pemilik usaha telah bergabung
+                    <span className="text-blue-600 font-bold">5.170</span> pemilik usaha telah bergabung
                   </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const HeroSection = () => {
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-[0.85rem] sm:w-20 sm:h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.65rem] bg-white">
                       <Image
-                        src="/trnasaksi-screen.jpeg"
+                        src="/transaksi-screen.jpeg"
                         alt="Tampilan Transaksi KasirGo+"
                         fill
                         className="object-contain"

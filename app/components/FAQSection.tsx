@@ -1,52 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { faqs } from "../data/faqs";
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const faqs = [
-    {
-      question: "Apakah benar-benar gratis?",
-      answer:
-        "Bisa dipakai gratis dengan akses hampir semua fitur POS — tinggal install dan langsung transaksi tanpa bayar. Kalau butuh lebih longgar, tersedia opsi upgrade ke Pro seharga Rp24.900/bulan.",
-    },
-    {
-      question: "Apakah butuh internet?",
-      answer:
-        "Tidak wajib! KasirGo+ dirancang dengan sistem offline-first. Semua transaksi, data produk, dan laporan tersimpan 100% di perangkat Anda. Internet hanya diperlukan jika Anda ingin backup ke cloud atau update aplikasi.",
-    },
-    {
-      question: "Bisa dipakai banyak kasir/staf?",
-      answer:
-        "Bisa! Fitur multi-user memungkinkan Anda membuat akun staf dengan PIN 4-6 digit. Anda bisa atur hak akses per staf: misalnya staf kasir hanya bisa proses transaksi, tidak bisa lihat laporan keuangan.",
-    },
-    {
-      question: "Bisa simpan transaksi yang belum dibayar (open bill)?",
-      answer:
-        "Tentu saja. Fitur Open Bill memungkinkan Anda menyimpan transaksi sementara untuk pelanggan yang makan di tempat atau pesan dulu bayar nanti. Bisa tambahkan nomor meja, nama pelanggan, dan catatan khusus.",
-    },
-    {
-      question: "Bagaimana kalau HP rusak/hilang?",
-      answer:
-        "Jangan panik! Selalu lakukan backup data secara berkala (bisa simpan ke Google Drive, email, atau HP lain). Jika HP rusak/hilang, tinggal install KasirGo+ di HP baru dan restore file backup yang Anda simpan.",
-    },
-    {
-      question: "Apakah data saya aman?",
-      answer:
-        "Aman. KasirGo+ offline-first — data transaksi tersimpan di perangkat Anda dan otomatis tersinkron ke server saat online, jadi tetap terjaga meski ganti HP. Privasi dan keamanan data usaha Anda adalah prioritas utama kami.",
-    },
-    {
-      question: "Bisa dipakai di tablet atau laptop?",
-      answer:
-        "Bisa! Aplikasi KasirGo+ dirancang responsive untuk layar HP (5 inch) hingga tablet (10 inch). Untuk laptop/PC, Anda bisa pakai emulator Android.",
-    },
-    {
-      question: "Bagaimana cara cetak struk?",
-      answer:
-        "KasirGo+ mendukung printer thermal Bluetooth ukuran 58mm dan 80mm dari berbagai merk (Epson, Xprinter, dll). Cukup pairing Bluetooth printer dengan HP Anda, lalu cetak struk otomatis setelah transaksi.",
-    },
-  ];
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -73,6 +31,7 @@ const FAQSection = () => {
               <button
                 type="button"
                 onClick={() => toggle(index)}
+                aria-expanded={openIndex === index}
                 className="w-full flex items-center justify-between gap-4 text-left px-6 sm:px-8 py-5 sm:py-6 group"
               >
                 <span className="text-lg sm:text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">

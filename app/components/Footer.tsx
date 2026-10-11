@@ -47,10 +47,15 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold text-lg mb-5">Produk</h4>
             <ul className="space-y-3">
-              {["Fitur", "Harga", "Changelog", "Roadmap"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                    {item}
+              {[
+                { name: "Fitur", href: "#fitur" },
+                { name: "Cara Pakai", href: "#cara-pakai" },
+                { name: "FAQ", href: "#faq" },
+                { name: "Harga", href: "#harga" },
+              ].map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-gray-400 hover:text-blue-400 transition-colors">
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -112,7 +117,9 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              href="https://www.tiktok.com/@kasirgoplus"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 bg-gray-800 hover:bg-[#3958A3] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all"
               aria-label="TikTok"
             >

@@ -64,12 +64,17 @@ Tidak ada biaya tersembunyi, bisa dibatalkan kapan saja. Harga Pro:
 - **Multi Metode Bayar**: tunai, transfer bank, QRIS, e-wallet, campuran; cetak struk thermal 58mm/80mm
 - **Riwayat & Refund**: pencarian transaksi lengkap, refund partial atau penuh
 - **Backup & restore**: amankan data untuk kebutuhan operasional
+- **Kasbon**: pembayaran kasbon (bayar nanti) dalam proses transaksi *(dikonfirmasi tim, 2026-10-12)*
+- **Variasi Produk**: atur variasi per produk *(dikonfirmasi tim, 2026-10-12)*
+- **Pelanggan & Member**: simpan data pelanggan untuk program loyalitas *(dikonfirmasi tim, 2026-10-12)*
+- **Pencatatan Pengeluaran**: catat biaya operasional untuk perhitungan keuntungan *(dikonfirmasi tim, 2026-10-12)*
 
 ## Keunggulan
 
 - Ringan dan responsif, cocok untuk data transaksi besar
 - Aman: sesi login terkontrol untuk menjaga keamanan akun
 - Offline-first: tetap bisa transaksi tanpa internet, sinkron saat online
+- Platform: HP dan tablet Android (tidak ada versi laptop/PC)
 
 ## Changelog terbaru (v1.4.0)
 

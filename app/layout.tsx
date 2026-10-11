@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import AnalyticsEvents from "./components/AnalyticsEvents";
 import { faqs, hargaFaqs, type Faq } from "./data/faqs";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -18,6 +20,8 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 const siteUrl = "https://kasirgoplus.com";
+// GA4 hanya aktif di build production, supaya `npm run dev` tidak mengotori data
+const gaId = process.env.NODE_ENV === "production" ? "G-26WVSXD51L" : undefined;
 const playStoreUrl = "https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id";
 
 const title = "KasirGo+ — Aplikasi Kasir Gratis & POS Offline untuk UMKM";
@@ -193,6 +197,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         {children}
         <WhatsAppFloat />
+        {gaId && (
+          <>
+            <GoogleAnalytics gaId={gaId} />
+            <AnalyticsEvents />
+          </>
+        )}
       </body>
     </html>
   );

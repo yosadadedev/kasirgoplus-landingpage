@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-4 pb-12 lg:pt-8 lg:pb-20">
+    <section id="hero" className="relative overflow-hidden pt-4 pb-12 lg:pt-8 lg:pb-20">
       <div className="absolute inset-0 bg-gradient-to-br from-[#3958A3]/5 via-white to-[#3958A3]/3" />
       <div className="absolute top-16 right-40 w-[32rem] h-[32rem] bg-[#3958A3]/5 rounded-full blur-3xl" />
 

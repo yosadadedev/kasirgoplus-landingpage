@@ -115,12 +115,6 @@ const HargaSection = () => {
                   <span>{plan.period}</span>
                 </p>
                 </div>
-                <button
-                  type="button"
-                  className="px-6 py-3 bg-[#3958A3] hover:bg-[#304c8d] text-white rounded-full font-bold shadow-md shadow-[#3958A3]/25 hover:shadow-[#3958A3]/40 hover:-translate-y-0.5 transition-all"
-                >
-                  Langganan
-                </button>
               </div>
             ))}
             </div>

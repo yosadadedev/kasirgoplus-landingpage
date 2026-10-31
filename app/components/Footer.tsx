@@ -48,10 +48,12 @@ const Footer = () => {
             <h4 className="text-white font-bold text-lg mb-5">Produk</h4>
             <ul className="space-y-3">
               {[
-                { name: "Fitur", href: "#fitur" },
-                { name: "Cara Pakai", href: "#cara-pakai" },
-                { name: "FAQ", href: "#faq" },
-                { name: "Harga", href: "#harga" },
+                { name: "Fitur", href: "/#fitur" },
+                { name: "Cara Pakai", href: "/#cara-pakai" },
+                { name: "FAQ", href: "/#faq" },
+                { name: "Harga", href: "/#harga" },
+                { name: "Kebijakan Privasi", href: "/kebijakan-privasi" },
+                { name: "Syarat & Ketentuan", href: "/syarat-ketentuan" },
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.href} className="text-gray-400 hover:text-blue-400 transition-colors">

@@ -1,8 +1,10 @@
 # KasirGo+ — App Reference
 
-Sumber data untuk konten landing page. Diambil dari listing Play Store, terakhir dicek 2026-08-23.
+Sumber data untuk konten landing page. Diambil dari listing Play Store (terakhir dicek 2026-08-23) dan App Store (terakhir dicek 2026-11-06).
 
-**Sumber**: https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id
+**Sumber**:
+- Play Store: https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id
+- App Store: https://apps.apple.com/id/app/kasirgo-aplikasi-kasir-umkm/id6829119858
 
 ## Info dasar
 
@@ -74,7 +76,7 @@ Tidak ada biaya tersembunyi, bisa dibatalkan kapan saja. Harga Pro:
 - Ringan dan responsif, cocok untuk data transaksi besar
 - Aman: sesi login terkontrol untuk menjaga keamanan akun
 - Offline-first: tetap bisa transaksi tanpa internet, sinkron saat online
-- Platform: HP dan tablet Android (tidak ada versi laptop/PC)
+- Platform: Android (HP & tablet) dan iOS/iPadOS 15.1+ (iPhone & iPad). Tidak ada versi laptop/PC — App Store menyebut bisa jalan di Mac M1+ tapi "Not verified for macOS", jadi jangan diklaim.
 
 ## Changelog terbaru (v1.4.0)
 
@@ -85,3 +87,22 @@ Tidak ada biaya tersembunyi, bisa dibatalkan kapan saja. Harga Pro:
 
 - WhatsApp: https://wa.me/62859106610011 (dipakai di [Navbar.tsx](app/components/Navbar.tsx))
 - Play Store: https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id
+- App Store: https://apps.apple.com/id/app/kasirgo-aplikasi-kasir-umkm/id6829119858
+- Link store di landing page dipusatkan di [StoreButtons.tsx](app/components/StoreButtons.tsx)
+
+## Listing App Store (dicek 2026-11-06)
+
+| Field | Value |
+|---|---|
+| Nama | KasirGo+ Aplikasi Kasir UMKM |
+| Seller | Yosada Dede Aressa (© Yosada Labs) |
+| Harga | Gratis, dengan pembelian dalam aplikasi |
+| Harga Pro (in-app) | Rp29rb/bulan, Rp79rb/3 bulan, Rp299rb/tahun — **berbeda dari harga Android di Model Harga** |
+| Rating | Belum ada (belum cukup ulasan) — rating 4,7 di atas hanya dari Play Store |
+| Kompatibilitas | iPhone & iPad (iOS/iPadOS 15.1+) |
+| Ukuran | 49,2 MB |
+| Age rating | 4+ |
+
+Catatan iOS: printer struk di iPhone/iPad hanya yang mendukung Bluetooth Low Energy (BLE) — lihat syarat-ketentuan.
+
+Fitur yang disebut di deskripsi App Store tapi belum ada di daftar Fitur utama: scan barcode pakai kamera, kirim struk via WhatsApp, poin member.

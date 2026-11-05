@@ -1,13 +1,13 @@
-import Image from "next/image";
+import StoreButtons from "./StoreButtons";
 
 const CaraPakaiSection = () => {
   const steps = [
     {
       number: "1",
       icon: "📲",
-      title: "Download di Play Store",
+      title: "Download Aplikasinya",
       description:
-        "Unduh aplikasi KasirGo+ dari Google Play Store di handphone Android Anda. Gratis tanpa iklan mengganggu.",
+        "Unduh KasirGo+ dari Google Play Store (Android) atau App Store (iPhone & iPad). Gratis tanpa iklan mengganggu.",
     },
     {
       number: "2",
@@ -65,23 +65,7 @@ const CaraPakaiSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
-          >
-            <Image
-              src="/google-play-store-icon.svg"
-              alt="Google Play"
-              width={36}
-              height={36}
-            />
-            <span className="flex flex-col items-start leading-tight">
-              <span className="text-xs text-gray-500">Download di</span>
-              <span className="text-lg font-bold text-gray-800">Play Store</span>
-            </span>
-          </a>
+          <StoreButtons className="justify-center" />
         </div>
       </div>
     </section>

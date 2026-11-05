@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import StoreButtons from "./StoreButtons";
 
 
 const Navbar = () => {
@@ -48,20 +49,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 sm:px-5 py-2.5 bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 rounded-full transition-all font-medium text-base shadow-sm hover:shadow-md hover:-translate-y-0.5"
-            >
-              <Image
-                src="/google-play-store-icon.svg"
-                alt="Google Play"
-                width={20}
-                height={20}
-              />
-              <span className="hidden sm:inline">Download di Play Store</span>
-            </a>
+            <StoreButtons variant="compact" />
 
             <button
               type="button"

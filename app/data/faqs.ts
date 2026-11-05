@@ -38,14 +38,14 @@ export const faqs: Faq[] = [
       "Aman. KasirGo+ offline-first — data transaksi tersimpan di perangkat Anda dan otomatis tersinkron ke server saat online, jadi tetap terjaga meski ganti HP. Privasi dan keamanan data usaha Anda adalah prioritas utama kami.",
   },
   {
-    question: "Bisa dipakai di tablet?",
+    question: "Bisa dipakai di iPhone atau tablet?",
     answer:
-      "Bisa! KasirGo+ tersedia untuk HP dan tablet Android, dengan tampilan yang menyesuaikan layar HP (5 inch) hingga tablet (10 inch).",
+      "Bisa! KasirGo+ tersedia di Google Play Store untuk HP dan tablet Android, serta di App Store untuk iPhone dan iPad (iOS/iPadOS 15.1 ke atas). Tampilannya menyesuaikan layar HP hingga tablet.",
   },
   {
     question: "Bagaimana cara cetak struk?",
     answer:
-      "KasirGo+ mendukung printer thermal Bluetooth ukuran 58mm dan 80mm dari berbagai merk (Epson, Xprinter, dll). Cukup pairing Bluetooth printer dengan HP Anda, lalu cetak struk otomatis setelah transaksi.",
+      "KasirGo+ mendukung printer thermal Bluetooth ukuran 58mm dan 80mm dari berbagai merk (Epson, Xprinter, dll). Cukup pairing Bluetooth printer dengan HP Anda, lalu cetak struk otomatis setelah transaksi. Khusus iPhone/iPad, gunakan printer yang mendukung Bluetooth Low Energy (BLE).",
   },
 ];
 

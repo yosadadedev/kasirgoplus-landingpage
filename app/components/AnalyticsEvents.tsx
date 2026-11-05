@@ -7,6 +7,7 @@ import { sendGAEvent } from "@next/third-parties/google";
 // diubah jadi client component hanya untuk tracking.
 const trackedLinks = [
   { match: "play.google.com", event: "click_play_store" },
+  { match: "apps.apple.com", event: "click_app_store" },
   { match: "wa.me", event: "click_whatsapp" },
   { match: "tiktok.com", event: "click_tiktok" },
 ];

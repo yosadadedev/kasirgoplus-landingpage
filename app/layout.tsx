@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import { PLAY_STORE_URL, APP_STORE_URL } from "./components/StoreButtons";
 import AnalyticsEvents from "./components/AnalyticsEvents";
 import { faqs, hargaFaqs, type Faq } from "./data/faqs";
 
@@ -22,11 +23,10 @@ const jetBrainsMono = JetBrains_Mono({
 const siteUrl = "https://kasirgoplus.com";
 // GA4 hanya aktif di build production, supaya `npm run dev` tidak mengotori data
 const gaId = process.env.NODE_ENV === "production" ? "G-26WVSXD51L" : undefined;
-const playStoreUrl = "https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id";
 
 const title = "KasirGo+ — Aplikasi Kasir Gratis & POS Offline untuk UMKM";
 const description =
-  "Aplikasi kasir Android gratis untuk toko, warung & UMKM. Transaksi cepat, kelola stok, cetak struk, laporan laba rugi. Tetap jalan tanpa internet.";
+  "Aplikasi kasir gratis untuk Android & iPhone. Cocok untuk toko, warung & UMKM: transaksi cepat, kelola stok, cetak struk, laporan laba rugi. Bisa offline.";
 
 export const viewport: Viewport = {
   themeColor: "#3958A3",
@@ -41,6 +41,8 @@ export const metadata: Metadata = {
     "aplikasi kasir",
     "aplikasi kasir gratis",
     "aplikasi kasir android",
+    "aplikasi kasir iphone",
+    "aplikasi kasir ios",
     "aplikasi kasir offline",
     "aplikasi kasir umkm",
     "kasir digital",
@@ -122,7 +124,7 @@ const jsonLd = {
         availableLanguage: ["id"],
       },
       parentOrganization: { "@type": "Organization", name: "Yosada Labs" },
-      sameAs: [playStoreUrl, "https://www.tiktok.com/@kasirgoplus"],
+      sameAs: [PLAY_STORE_URL, APP_STORE_URL, "https://www.tiktok.com/@kasirgoplus"],
     },
     {
       "@type": "WebSite",
@@ -138,14 +140,14 @@ const jsonLd = {
       name: "KasirGo+",
       alternateName: "KasirGo+ Aplikasi Kasir UMKM",
       applicationCategory: "BusinessApplication",
-      operatingSystem: "Android",
+      operatingSystem: "Android, iOS, iPadOS",
       softwareVersion: "1.4.0",
       inLanguage: "id-ID",
       description:
         "Aplikasi kasir digital dan POS (Point of Sale) untuk UMKM Indonesia — kelola penjualan, stok barang, dan keuangan usaha. Offline-first, bisa mulai gratis kapan saja.",
       url: siteUrl,
-      downloadUrl: playStoreUrl,
-      installUrl: playStoreUrl,
+      downloadUrl: [PLAY_STORE_URL, APP_STORE_URL],
+      installUrl: [PLAY_STORE_URL, APP_STORE_URL],
       screenshot: [
         `${siteUrl}/kasir-screen.jpeg`,
         `${siteUrl}/transaksi-screen.jpeg`,

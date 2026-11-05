@@ -148,7 +148,8 @@ const sections = [
           Data disimpan selama akun Anda aktif. Anda dapat menghapus akun langsung dari aplikasi
           melalui <strong>Pengaturan → Hapus Akun</strong>. Jika Anda pemilik usaha, penghapusan
           akun juga menghapus data usaha (produk, transaksi, pelanggan, kasir, dan pengaturan) dari
-          server kami. Tindakan ini tidak dapat dibatalkan.
+          server kami, termasuk foto produk dan gambar QRIS di penyimpanan cloud. Penghapusan akun
+          memerlukan konfirmasi password dan tidak dapat dibatalkan.
         </p>
         <p>
           Data yang masih tersimpan di perangkat akan terhapus saat Anda keluar dari akun atau

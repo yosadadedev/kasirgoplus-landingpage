@@ -1,4 +1,5 @@
 import Image from "next/image";
+import StoreButtons from "./StoreButtons";
 
 const HeroSection = () => {
   return (
@@ -29,28 +30,10 @@ const HeroSection = () => {
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
               Kelola penjualan, stok barang, dan keuangan dengan aplikasi kasir gratis{" "}
-              <strong>KasirGo+</strong>. Sistem POS (Point of Sale) terbaik untuk HP dan tablet Android — bisa offline maupun online, mulai gratis kapan saja.
+              <strong>KasirGo+</strong>. Sistem POS (Point of Sale) terbaik untuk Android, iPhone, dan iPad — bisa offline maupun online, mulai gratis kapan saja.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 pt-1">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-[#3958A3] hover:bg-[#304c8d] text-white rounded-full transition-all font-semibold text-base shadow-[0_14px_30px_-12px_rgba(57,88,163,0.55)] hover:shadow-[0_16px_35px_-12px_rgba(57,88,163,0.7)] hover:-translate-y-0.5"
-              >
-                Coba KasirGo+ Sekarang
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </a>
-              <a
-                href="#fitur"
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 rounded-full transition-all font-semibold text-base shadow-sm"
-              >
-                Lihat Fitur
-              </a>
-            </div>
+            <StoreButtons theme="dark" className="pt-1" />
 
             <div className="pt-1">
               <div className="flex items-center gap-3">
@@ -66,7 +49,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700 text-sm">
-                    <span className="text-blue-600 font-bold">5.170</span> pemilik usaha telah bergabung
+                    <span className="text-blue-600 font-bold">5.570</span> pemilik usaha telah bergabung
                   </p>
                 </div>
               </div>

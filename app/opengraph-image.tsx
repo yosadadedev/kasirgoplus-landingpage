@@ -50,7 +50,7 @@ export default async function OpengraphImage() {
               alignSelf: "flex-start",
             }}
           >
-            Download gratis di Play Store
+            Gratis di Play Store & App Store
           </div>
         </div>
         <div
